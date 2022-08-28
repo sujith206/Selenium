@@ -45,7 +45,7 @@ public class demo {
 		js.executeScript("window.scrollBy(0,250)", "");
 		
 		WebElement Apple=driver.findElement(By.xpath("//*[text()='Apple Cinema 30\"']"));
-		js.executeScript("arguments[0].scrollIntoView(true);",Apple);
+		js.executeScript("arguments[0].scrollIntoView(true);",AppleStar);
 		WebDriverWait wait=new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(Apple)).click();
 	}
